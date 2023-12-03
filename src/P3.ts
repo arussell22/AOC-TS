@@ -174,29 +174,6 @@ const partTwo = async (file: any) => {
                 }
             })
 
-
-            // currLine.numberIndices?.forEach((num) => {
-            //     if (sym.pos >= num.startPos - 1 && sym.pos <= num.endPos) {
-            //         if (!num.counted) {
-            //             total += parseInt(num.name)
-            //             num.counted = true
-            //             console.log("Counted", num.name, sym.pos, num.startPos, num.endPos)
-            //         }
-            //     }
-            // }))
-            // currLine.symbolIndices?.forEach((sym) => prevLine.numberIndices?.forEach((num) => {
-            //     if (sym.pos >= num.startPos - 1 && sym.pos <= num.endPos) {
-            //         if (!num.counted) {
-            //             total += parseInt(num.name)
-            //             num.counted = true
-            //             console.log("Counted", num.name, sym.pos, num.startPos, num.endPos)
-            //         }
-            //     }
-            // }))
-    
-            // console.log ("True", prevLine.numberIndices.filter((a) => a.counted))
-            // total += prevLine.numberIndices.reduce((a, b) => b.counted && (a + parseInt(b.name)), 0)
-            // console.log(total)
         }
         oldestLine = prevLine
         prevLine = currLine
